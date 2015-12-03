@@ -22,6 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy
 
+# LayersManager
+PRODUCT_COPY_FILES += \
+		vendor/vrtoxin/prebuilt/common/app/LayersManager.apk:system/app/LayersManager.apk
+
 # VRToxin property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.bg_apps_limit=20 \
