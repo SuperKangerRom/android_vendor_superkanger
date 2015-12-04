@@ -73,6 +73,11 @@ PRODUCT_COPY_FILES += \
     vendor/vrtoxin/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/vrtoxin/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/vrtoxin/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Additional Packages
 PRODUCT_PACKAGES += \
     Exchange2 \
