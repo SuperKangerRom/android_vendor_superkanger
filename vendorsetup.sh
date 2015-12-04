@@ -1,1 +1,2 @@
 add_lunch_combo vrtoxin_angler-user
+add_lunch_combo vrtoxin_shamu-user
