@@ -78,6 +78,12 @@ PRODUCT_COPY_FILES += \
     vendor/vrtoxin/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Telephony packages
+ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_angler,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver
+endif
+
 # Additional Packages
 PRODUCT_PACKAGES += \
     Exchange2 \
