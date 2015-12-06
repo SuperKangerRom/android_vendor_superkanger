@@ -87,4 +87,5 @@ endif
 # Additional Packages
 PRODUCT_PACKAGES += \
     Exchange2 \
-    LockClock
+    LockClock \
+    OmniSwitch
