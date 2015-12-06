@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/vrtoxin/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# 3Minit Battery Settings
+PRODUCT_COPY_FILES += \
+    vendor/vrtoxin/prebuilt/common/3MinitBatterySettings.apk:system/app/3MinitBatterySettings.apk
+
 # Telephony packages
 ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_angler,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
