@@ -71,16 +71,16 @@ PRODUCT_COPY_FILES +=  \
     vendor/vrtoxin/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/vrtoxin/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Backuptool support
 PRODUCT_COPY_FILES += \
     vendor/vrtoxin/prebuilt/addon.d/50-vrtoxin.sh:system/addon.d/50-vrtoxin.sh \
     vendor/vrtoxin/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/vrtoxin/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh
-
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/vrtoxin/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # 3Minit Battery Settings
 PRODUCT_COPY_FILES += \
@@ -94,6 +94,7 @@ endif
 
 # Additional Packages
 PRODUCT_PACKAGES += \
+    Eleven \
     Exchange2 \
     LockClock \
     OmniSwitch
