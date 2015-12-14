@@ -86,7 +86,8 @@ PRODUCT_COPY_FILES += \
 # Telephony packages
 ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_angler,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver
+    CellBroadcastReceiver \
+    messaging
 endif
 
 # Additional Packages
