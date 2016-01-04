@@ -57,8 +57,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Proprietary latinime lib needed for swyping
+ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/vrtoxin/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/vrtoxin/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/vrtoxin/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
+endif
 
 # Camera Effects
 ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu,$(TARGET_PRODUCT)),)
