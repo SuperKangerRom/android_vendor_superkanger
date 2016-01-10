@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Camera Effects
-ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_sprout4,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
     vendor/vrtoxin/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/vrtoxin/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
     vendor/vrtoxin/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Telephony packages
-ifneq ($(filter vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_angler,$(TARGET_PRODUCT)),)
+ifneq ($(filter vrtoxin_angler vrtoxin_bullhead vrtoxin_flounder vrtoxin_hammerhead vrtoxin_shamu vrtoxin_sprout4,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     messaging

@@ -32,3 +32,7 @@ endif
 ifeq (vrtoxin_shamu,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/vrtoxin_shamu.mk
 endif
+
+ifeq (vrtoxin_sprout4,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/vrtoxin_sprout4.mk
+endif
