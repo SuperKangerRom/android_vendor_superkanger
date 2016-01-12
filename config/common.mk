@@ -100,4 +100,6 @@ PRODUCT_PACKAGES += \
     Eleven \
     Exchange2 \
     LockClock \
-    OmniSwitch
+    OmniSwitch \
+    VRToxinMods \
+    KernelAdiutor
