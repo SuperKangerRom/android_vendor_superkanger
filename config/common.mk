@@ -103,3 +103,12 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     VRToxinMods \
     KernelAdiutor
+
+# VRToxin version
+PRODUCT_VERSION_MAJOR = 3
+PRODUCT_VERSION_MAINTENANCE = 0
+ROM_VERSION := v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date +%Y%m%d)-$(VRTOXIN_BUILD)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.vrtoxin.version=$(ROM_VERSION) \
+  ro.modversion=$(ROM_VERSION)
