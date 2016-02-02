@@ -111,4 +111,4 @@ ROM_VERSION := v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell 
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.vrtoxin.version=$(ROM_VERSION) \
-  ro.modversion=$(ROM_VERSION)
+  ro.modversion=VRToxin-$(ROM_VERSION)
