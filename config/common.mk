@@ -107,9 +107,10 @@ PRODUCT_PACKAGES += \
 # VRToxin version
 PRODUCT_VERSION_MAJOR = 3
 PRODUCT_VERSION_MAINTENANCE = 0
-ROM_VERSION := v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date +%Y%m%d)-$(VRTOXIN_BUILD)
+ROM_VERSION := v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MAINTENANCE)-$(VRTOXIN_BUILD)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.vrtoxin.version=$(ROM_VERSION) \
+  ro.vrtoxin.version=VRToxin-$(ROM_VERSION) \
   ro.modversion=VRToxin-$(ROM_VERSION) \
+  vrtoxin.ota.version=$(shell date -u +%Y%m%d) \
   ro.dragontc.version=(DragonTC)-v$(TARGET_DRAGONTC_VERSION)
