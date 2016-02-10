@@ -42,8 +42,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
     net.tethering.noprovisioning=true \
+    ro.allow.mock.location=0 \
     persist.sys.dun.override=0 \
-    ro.adb.secure=1
+    ro.debuggable=1 \
+    persist.service.adb.enable=1 \
+    persist.sys.root_access=3 \
+    ro.adb.secure=0 \
+    ro.secure=0
+
+# Enable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+	ro.secure=0
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/vrtoxin/overlay/common
