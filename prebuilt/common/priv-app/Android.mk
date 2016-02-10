@@ -1,5 +1,15 @@
 LOCAL_PATH := $(call my-dir)
 
+# AdAway
+include $(CLEAR_VARS)
+LOCAL_MODULE := AdAway
+LOCAL_SRC_FILES := AdAway/AdAway.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
 # KernelAdiutor
 include $(CLEAR_VARS)
 LOCAL_MODULE := KernelAdiutor
@@ -9,4 +19,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
-

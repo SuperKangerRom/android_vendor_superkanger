@@ -98,6 +98,7 @@ endif
 
 # Additional Packages
 PRODUCT_PACKAGES += \
+    AdAway \
     Eleven \
     Exchange2 \
     LockClock \
