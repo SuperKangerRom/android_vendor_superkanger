@@ -129,7 +129,7 @@ ifeq (true,$(ENABLE_SANITIZE))
 endif
 
 ifeq (true,$(CORTEX_TUNINGS))
-  OPT9 := (CORTEX)
+  OPT9 := (cortex-tunings)
 endif
 
 GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)$(OPT6)$(OPT7)$(OPT8)$(OPT9)
