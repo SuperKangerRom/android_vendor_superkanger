@@ -113,8 +113,8 @@ PRODUCT_PACKAGES += \
     Exchange2 \
     LockClock \
     OmniSwitch \
-    VRToxinMods \
-    KernelAdiutor
+    KernelAdiutor \
+    TestApp
 
 # VRToxin version
 PRODUCT_VERSION_MAJOR = 3
