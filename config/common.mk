@@ -114,10 +114,10 @@ PRODUCT_PACKAGES += \
     LockClock \
     OmniSwitch \
     KernelAdiutor \
-    TestApp
+    VRToxinMods
 
 # VRToxin version
-PRODUCT_VERSION_MAJOR = 3
+PRODUCT_VERSION_MAJOR = 4
 PRODUCT_VERSION_MAINTENANCE = 0
 ROM_VERSION := v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MAINTENANCE)-$(VRTOXIN_BUILD)-$(shell date +%Y%m%d)
 
